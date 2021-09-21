@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="album1RowModel" type="com.musicplayer.app.modules.album.data.model.Album1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStyle">
+        <FrameLayout android:id="@+id/frame"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08" android:layout_width="0dp" style="@style/groupStyle">
+            <FrameLayout android:id="@+id/frame1"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" style="@style/groupStylewhite_A700_75">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txt1"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_5px"
+                    android:layout_marginEnd="@dimen/_7px"
+                    android:layout_marginStart="@dimen/_7px"
+                    android:layout_width="match_parent"
+                    android:text="@{album1RowModel.txt1}" style="@style/textStyleRobotomedium18"/>
+            </FrameLayout>
+        </FrameLayout>
+        <LinearLayout android:id="@+id/linear1"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_weight="0.82" android:layout_width="0dp"
+            android:orientation="vertical" style="@style/groupStyle">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtBurning"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@{album1RowModel.txtBurning}" style="@style/textStyleRobotomedium18"/>
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtPodvalCaplella"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5px"
+                android:layout_width="match_parent"
+                android:text="@{album1RowModel.txtPodvalCaplella}" style="@style/textStyleRobotoregular14"/>
+        </LinearLayout>
+        <View android:background="@color/white_A700"
+            android:id="@+id/line"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/_4px"
+            android:layout_marginStart="@dimen/_14px"
+            android:layout_weight="0.1" android:layout_width="0dp"/>
+    </LinearLayout>
+</layout>

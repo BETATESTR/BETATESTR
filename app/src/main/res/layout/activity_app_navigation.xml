@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="appNavigationVM" type="com.musicplayer.app.modules.appnavigation.data.viewmodel.AppNavigationVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linear1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <TextView android:gravity="center|start"
+                android:id="@+id/txtAppNavigation"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10px"
+                android:layout_marginEnd="@dimen/_20px"
+                android:layout_marginStart="@dimen/_20px"
+                android:layout_marginTop="@dimen/_10px"
+                android:layout_width="match_parent"
+                android:text="@{appNavigationVM.appNavigationModel.txtAppNavigation}" style="@style/textStyleregular20"/>
+            <TextView android:gravity="center|start"
+                android:id="@+id/txtCheckYourApp"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20px"
+                android:layout_width="match_parent"
+                android:text="@{appNavigationVM.appNavigationModel.txtCheckYourApp}" style="@style/textStyleregular16"/>
+            <View android:background="@color/black_900"
+                android:id="@+id/line"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_1px"
+                android:layout_marginTop="@dimen/_5px" android:layout_width="match_parent"/>
+        </LinearLayout>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:id="@+id/scrollView"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linear2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700">
+                <LinearLayout android:clickable="true"
+                    android:id="@+id/linear3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:gravity="center|start"
+                        android:id="@+id/txt17Album"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10px"
+                        android:layout_marginEnd="@dimen/_20px"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_marginTop="@dimen/_10px"
+                        android:layout_width="match_parent"
+                        android:text="@{appNavigationVM.appNavigationModel.txt17Album}" style="@style/textStyleregular20"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/line1"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1px"
+                        android:layout_marginTop="@dimen/_5px" android:layout_width="match_parent"/>
+                </LinearLayout>
+                <LinearLayout android:clickable="true"
+                    android:id="@+id/linear4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:gravity="center|start"
+                        android:id="@+id/txt16Albums"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10px"
+                        android:layout_marginEnd="@dimen/_20px"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_marginTop="@dimen/_10px"
+                        android:layout_width="match_parent"
+                        android:text="@{appNavigationVM.appNavigationModel.txt16Albums}" style="@style/textStyleregular20"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/line2"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1px"
+                        android:layout_marginTop="@dimen/_5px" android:layout_width="match_parent"/>
+                </LinearLayout>
+                <LinearLayout android:clickable="true"
+                    android:id="@+id/linear5"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:gravity="center|start"
+                        android:id="@+id/txt15Login"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10px"
+                        android:layout_marginEnd="@dimen/_20px"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_marginTop="@dimen/_10px"
+                        android:layout_width="match_parent"
+                        android:text="@{appNavigationVM.appNavigationModel.txt15Login}" style="@style/textStyleregular20"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/line3"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1px"
+                        android:layout_marginTop="@dimen/_5px" android:layout_width="match_parent"/>
+                </LinearLayout>
+                <LinearLayout android:clickable="true"
+                    android:id="@+id/linear6"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:gravity="center|start"
+                        android:id="@+id/txt14Artist"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10px"
+                        android:layout_marginEnd="@dimen/_20px"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_marginTop="@dimen/_10px"
+                        android:layout_width="match_parent"
+                        android:text="@{appNavigationVM.appNavigationModel.txt14Artist}" style="@style/textStyleregular20"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/line4"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1px"
+                        android:layout_marginTop="@dimen/_5px" android:layout_width="match_parent"/>
+                </LinearLayout>
+                <LinearLayout android:clickable="true"
+                    android:id="@+id/linear7"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:gravity="center|start"
+                        android:id="@+id/txt13Artists"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10px"
+                        android:layout_marginEnd="@dimen/_20px"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_marginTop="@dimen/_10px"
+                        android:layout_width="match_parent"
+                        android:text="@{appNavigationVM.appNavigationModel.txt13Artists}" style="@style/textStyleregular20"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/line5"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1px"
+                        android:layout_marginTop="@dimen/_5px" android:layout_width="match_parent"/>
+                </LinearLayout>
+                <LinearLayout android:clickable="true"
+                    android:id="@+id/linear8"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:gravity="center|start"
+                        android:id="@+id/txt12Profile"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10px"
+                        android:layout_marginEnd="@dimen/_20px"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_marginTop="@dimen/_10px"
+                        android:layout_width="match_parent"
+                        android:text="@{appNavigationVM.appNavigationModel.txt12Profile}" style="@style/textStyleregular20"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/line6"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1px"
+                        android:layout_marginTop="@dimen/_5px" android:layout_width="match_parent"/>
+                </LinearLayout>
+                <LinearLayout android:clickable="true"
+                    android:id="@+id/linear9"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:gravity="center|start"
+                        android:id="@+id/txt11Favorites"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10px"
+                        android:layout_marginEnd="@dimen/_20px"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_marginTop="@dimen/_10px"
+                        android:layout_width="match_parent"
+                        android:text="@{appNavigationVM.appNavigationModel.txt11Favorites}" style="@style/textStyleregular20"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/line7"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1px"
+                        android:layout_marginTop="@dimen/_5px" android:layout_width="match_parent"/>
+                </LinearLayout>
+                <LinearLayout android:clickable="true"
+                    android:id="@+id/linear10"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:gravity="center|start"
+                        android:id="@+id/txt10Setting"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10px"
+                        android:layout_marginEnd="@dimen/_20px"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_marginTop="@dimen/_10px"
+                        android:layout_width="match_parent"
+                        android:text="@{appNavigationVM.appNavigationModel.txt10Setting}" style="@style/textStyleregular20"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/line8"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1px"
+                        android:layout_marginTop="@dimen/_5px" android:layout_width="match_parent"/>
+                </LinearLayout>
+                <LinearLayout android:clickable="true"
+                    android:id="@+id/linear11"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:gravity="center|start"
+                        android:id="@+id/txt8List"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10px"
+                        android:layout_marginEnd="@dimen/_20px"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_marginTop="@dimen/_10px"
+                        android:layout_width="match_parent"
+                        android:text="@{appNavigationVM.appNavigationModel.txt8List}" style="@style/textStyleregular20"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/line9"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1px"
+                        android:layout_marginTop="@dimen/_5px" android:layout_width="match_parent"/>
+                </LinearLayout>
+                <LinearLayout android:clickable="true"
+                    android:id="@+id/linear12"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:gravity="center|start"
+                        android:id="@+id/txt7TopPlaylis"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10px"
+                        android:layout_marginEnd="@dimen/_20px"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_marginTop="@dimen/_10px"
+                        android:layout_width="match_parent"
+                        android:text="@{appNavigationVM.appNavigationModel.txt7TopPlaylis}" style="@style/textStyleregular20"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/line10"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1px"
+                        android:layout_marginTop="@dimen/_5px" android:layout_width="match_parent"/>
+                </LinearLayout>
+                <LinearLayout android:clickable="true"
+                    android:id="@+id/linear13"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:gravity="center|start"
+                        android:id="@+id/txt1HomePage"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10px"
+                        android:layout_marginEnd="@dimen/_20px"
+                        android:layout_marginStart="@dimen/_20px"
+                        android:layout_marginTop="@dimen/_10px"
+                        android:layout_width="match_parent"
+                        android:text="@{appNavigationVM.appNavigationModel.txt1HomePage}" style="@style/textStyleregular20"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/line11"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1px"
+                        android:layout_marginTop="@dimen/_5px" android:layout_width="match_parent"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

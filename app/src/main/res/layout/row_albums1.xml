@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="albums1RowModel" type="com.musicplayer.app.modules.albums.data.model.Albums1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStyle">
+        <ImageView android:id="@+id/image"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/_78px"
+            android:layout_width="@dimen/_78px" imageRes="@{@drawable/img_3967}"/>
+        <LinearLayout android:id="@+id/linear1"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16px"
+            android:layout_weight="0.66" android:layout_width="0dp"
+            android:orientation="vertical" style="@style/groupStyle">
+            <FrameLayout android:id="@+id/frame"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" style="@style/groupStyle">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtFlowerPower"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_3px"
+                    android:layout_width="match_parent"
+                    android:text="@{albums1RowModel.txtFlowerPower}" style="@style/textStyleRobotomedium18"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frame1"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3px"
+                android:layout_width="match_parent" style="@style/groupStyle">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtRayCharles"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_2px"
+                    android:layout_marginEnd="@dimen/_1px"
+                    android:layout_width="match_parent"
+                    android:text="@{albums1RowModel.txtRayCharles}" style="@style/textStyleRobotoregular16"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frame2"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3px"
+                android:layout_width="match_parent" style="@style/groupStyle">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txt2018"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_2px"
+                    android:layout_width="match_parent"
+                    android:text="@{albums1RowModel.txt2018}" style="@style/textStyleRobotoregular16"/>
+            </FrameLayout>
+        </LinearLayout>
+        <View android:background="@color/white_A700"
+            android:id="@+id/line"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/_4px"
+            android:layout_marginStart="@dimen/_14px"
+            android:layout_weight="0.1" android:layout_width="0dp"/>
+    </LinearLayout>
+</layout>

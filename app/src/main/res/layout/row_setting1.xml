@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="setting1RowModel" type="com.musicplayer.app.modules.setting.data.model.Setting1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" style="@style/groupStyle">
+        <FrameLayout android:id="@+id/frame"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_3px"
+            android:layout_marginStart="@dimen/_3px"
+            android:layout_width="wrap_content" style="@style/groupStyle">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txt4Db" android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_2px"
+                android:layout_width="match_parent"
+                android:text="@{setting1RowModel.txt4Db}" style="@style/textStyleRobotoregular12"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/image"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_298px"
+            android:layout_marginEnd="@dimen/_6px"
+            android:layout_marginStart="@dimen/_6px"
+            android:layout_marginTop="@dimen/_7px"
+            android:layout_width="@dimen/_19px" android:src="@drawable/img_1"/>
+        <FrameLayout android:id="@+id/frame1"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7px"
+            android:layout_width="wrap_content" style="@style/groupStyle">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txt60Hz"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_2px"
+                android:layout_width="match_parent"
+                android:text="@{setting1RowModel.txt60Hz}" style="@style/textStyleRobotoregular12"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>
