@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homePageVM" type="com.musicplayer.app.modules.homepage.data.viewmodel.HomePageVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblack_900">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linear1"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyle">
+                <ImageView android:id="@+id/image"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_18px"
+                    android:layout_width="@dimen/_10px" android:src="@drawable/img_icon15"/>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtDashboard"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_50px"
+                    android:layout_weight="0.51"
+                    android:layout_width="0dp"
+                    android:text="@{homePageVM.homePageModel.txtDashboard}" style="@style/textStyleRobotoregular20"/>
+                <ImageView android:id="@+id/image1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_16px"
+                    android:layout_marginStart="@dimen/_50px"
+                    android:layout_width="@dimen/_19px" android:src="@drawable/img_icon16"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false" android:fillViewport="true"
+            android:id="@+id/scrollView"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="match_parent" android:paddingBottom="@dimen/_10px">
+            <LinearLayout android:id="@+id/linear2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStyleblack_900">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtListenToMusic"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_50px"
+                    android:layout_marginStart="@dimen/_50px"
+                    android:layout_marginTop="@dimen/_52px"
+                    android:layout_width="match_parent"
+                    android:text="@{homePageVM.homePageModel.txtListenToMusic}" style="@style/textStyleRobotomedium28"/>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtWithoutRestric"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_50px"
+                    android:layout_marginStart="@dimen/_50px"
+                    android:layout_marginTop="@dimen/_2px"
+                    android:layout_width="match_parent"
+                    android:text="@{homePageVM.homePageModel.txtWithoutRestric}" style="@style/textStyleRobotomedium28"/>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtTrialVersion"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_50px"
+                    android:layout_marginStart="@dimen/_50px"
+                    android:layout_marginTop="@dimen/_43px"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_12px"
+                    android:paddingStart="@dimen/_30px"
+                    android:paddingTop="@dimen/_8px"
+                    android:text="@{homePageVM.homePageModel.txtTrialVersion}" style="@style/textStyleRobotoregular18"/>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtFreeFor3Mont"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_50px"
+                    android:layout_marginStart="@dimen/_50px"
+                    android:layout_marginTop="@dimen/_41px"
+                    android:layout_width="match_parent"
+                    android:text="@{homePageVM.homePageModel.txtFreeFor3Mont}" style="@style/textStyleRobotoregular14"/>
+                <LinearLayout android:id="@+id/linear3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_22px"
+                    android:layout_marginStart="@dimen/_22px"
+                    android:layout_marginTop="@dimen/_49px"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal" style="@style/groupStyle">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtNewReleases"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.47"
+                        android:layout_width="0dp"
+                        android:text="@{homePageVM.homePageModel.txtNewReleases}" style="@style/textStyleRobotobold26"/>
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txtViewAll"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_50px"
+                        android:layout_weight="0.45"
+                        android:layout_width="0dp"
+                        android:text="@{homePageVM.homePageModel.txtViewAll}" style="@style/textStyleRobotoregular14"/>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15px"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_21px}" tools:itemCount="2" tools:listitem="@layout/row_home_page1"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <FrameLayout android:id="@+id/frame"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" style="@style/groupStyle">
+            <LinearLayout android:id="@+id/linear4"
+                android:layout_gravity="center|start"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_8px"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStyleblack_900_a6">
+                <LinearLayout android:id="@+id/linear5"
+                    android:layout_gravity="end"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/image2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_10px"
+                        android:layout_width="@dimen/_18px" android:src="@drawable/img_icon13"/>
+                    <LinearLayout android:id="@+id/linear6"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_50px"
+                        android:layout_weight="0.57"
+                        android:layout_width="0dp"
+                        android:orientation="vertical" style="@style/groupStyle">
+                        <FrameLayout android:id="@+id/frame1"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" style="@style/groupStyle">
+                            <TextView android:gravity="top|start"
+                                android:id="@+id/txtUrgentSiege"
+                                android:layout_gravity="center"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_2px"
+                                android:layout_width="match_parent"
+                                android:text="@{homePageVM.homePageModel.txtUrgentSiege}" style="@style/textStyleRobotomedium15"/>
+                        </FrameLayout>
+                        <FrameLayout android:id="@+id/frame2"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_2px"
+                            android:layout_marginStart="@dimen/_2px"
+                            android:layout_width="match_parent" style="@style/groupStyle">
+                            <TextView android:gravity="top|start"
+                                android:id="@+id/txtDamnedAnthem"
+                                android:layout_gravity="center"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_2px"
+                                android:layout_width="match_parent"
+                                android:text="@{homePageVM.homePageModel.txtDamnedAnthem}" style="@style/textStyleRobotoregular11"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/image3"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_17px"
+                        android:layout_marginStart="@dimen/_50px"
+                        android:layout_width="@dimen/_16px" android:src="@drawable/img_icon14"/>
+                </LinearLayout>
+                <View android:background="@color/white_A700"
+                    android:id="@+id/line"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_3px"
+                    android:layout_marginTop="@dimen/_5px" android:layout_width="match_parent"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

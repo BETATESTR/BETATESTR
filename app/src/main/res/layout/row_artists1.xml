@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="artists1RowModel" type="com.musicplayer.app.modules.artists.data.model.Artists1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStyle">
+        <FrameLayout android:background="@color/green_300"
+            android:id="@+id/frame"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/_78px" android:layout_width="@dimen/_78px"/>
+        <LinearLayout android:id="@+id/linear1"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_13px"
+            android:layout_weight="0.53" android:layout_width="0dp"
+            android:orientation="vertical" style="@style/groupStyle">
+            <FrameLayout android:id="@+id/frame1"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" style="@style/groupStyle">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtLorn"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_3px"
+                    android:layout_width="match_parent"
+                    android:text="@{artists1RowModel.txtLorn}" style="@style/textStyleRobotomedium18"/>
+            </FrameLayout>
+            <LinearLayout android:id="@+id/linear2"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3px"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyle">
+                <FrameLayout android:id="@+id/frame2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.46"
+                    android:layout_width="0dp" style="@style/groupStyle">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txt843Tracks"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_2px"
+                        android:layout_width="match_parent"
+                        android:text="@{artists1RowModel.txt843Tracks}" style="@style/textStyleRobotoregular16"/>
+                </FrameLayout>
+                <FrameLayout android:background="@color/white_A700_95"
+                    android:id="@+id/frame3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_3px"
+                    android:layout_marginStart="@dimen/_4px" android:layout_width="@dimen/_3px"/>
+                <FrameLayout android:id="@+id/frame4"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5px"
+                    android:layout_weight="0.49"
+                    android:layout_width="0dp" style="@style/groupStyle">
+                    <TextView android:gravity="top|start"
+                        android:id="@+id/txt23Albums"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_2px"
+                        android:layout_width="match_parent"
+                        android:text="@{artists1RowModel.txt23Albums}" style="@style/textStyleRobotoregular16"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/white_A700"
+            android:id="@+id/line"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/_4px"
+            android:layout_marginStart="@dimen/_50px"
+            android:layout_weight="0.23" android:layout_width="0dp"/>
+    </LinearLayout>
+</layout>

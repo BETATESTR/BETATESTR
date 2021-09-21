@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="topPlaylists1RowModel" type="com.musicplayer.app.modules.topplaylists.data.model.TopPlaylists1RowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frame"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" style="@style/groupStyle">
+        <FrameLayout android:id="@+id/frame1"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" style="@style/groupStylecornerRadius_1">
+            <ImageView android:id="@+id/image"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_181px"
+                android:layout_width="@dimen/_366px" imageRes="@{@drawable/img_mask3_clipped}"/>
+            <LinearLayout android:id="@+id/linear"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <ImageView android:id="@+id/image1"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_38px"
+                    android:layout_width="@dimen/_38px" android:src="@drawable/img_favorites3_2"/>
+                <LinearLayout android:id="@+id/linear1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_38px"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <LinearLayout android:id="@+id/linear2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.48"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <FrameLayout android:id="@+id/frame2"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" style="@style/groupStyle">
+                            <TextView android:gravity="top|start"
+                                android:id="@+id/txtRenaissance"
+                                android:layout_gravity="center"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_4px"
+                                android:layout_width="match_parent"
+                                android:text="@{topPlaylists1RowModel.txtRenaissance}" style="@style/textStyleRobotomedium28"/>
+                        </FrameLayout>
+                        <FrameLayout android:id="@+id/frame3"
+                            android:layout_gravity="start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_1px"
+                            android:layout_width="match_parent" style="@style/groupStyle">
+                            <TextView android:gravity="top|start"
+                                android:id="@+id/txt843Tracks"
+                                android:layout_gravity="center"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/_2px"
+                                android:layout_width="match_parent"
+                                android:text="@{topPlaylists1RowModel.txt843Tracks}" style="@style/textStyleRobotoregular16"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                    <FrameLayout
+                        android:background="@color/white_A700_95"
+                        android:id="@+id/frame4"
+                        android:layout_gravity="bottom"
+                        android:layout_height="@dimen/_3px"
+                        android:layout_marginEnd="@dimen/_50px" android:layout_width="@dimen/_3px"/>
+                    <FrameLayout android:id="@+id/frame5"
+                        android:layout_gravity="bottom"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5px"
+                        android:layout_weight="0.21"
+                        android:layout_width="0dp" style="@style/groupStyle">
+                        <TextView android:gravity="top|start"
+                            android:id="@+id/txt23Hours"
+                            android:layout_gravity="center"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/_2px"
+                            android:layout_width="match_parent"
+                            android:text="@{topPlaylists1RowModel.txt23Hours}" style="@style/textStyleRobotoregular16"/>
+                    </FrameLayout>
+                    <ImageView android:id="@+id/image2"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="@dimen/_59px"
+                        android:layout_marginStart="@dimen/_50px"
+                        android:layout_width="@dimen/_59px" imageRes="@{@drawable/img_play3}"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</layout>

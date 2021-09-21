@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <style name="textStyleregular20">
+        <item name="android:textSize">@dimen/_20px</item>
+        <item name="android:textColor">@color/black_900</item>
+        <item name="android:textFontWeight">400</item>
+    </style>
+    <style name="groupStylered_900">
+        <item name="android:background">@drawable/rectangle_bg_red_900</item>
+    </style>
+    <style name="groupStylecornerRadius">
+        <item name="android:background">@drawable/rectangle_gradient_s_yellow_400_e_deep_orange_a700_radius_8</item>
+    </style>
+    <style name="textStyleRobotomedium15" parent="textStyleRobotomedium18">
+        <item name="android:textSize">@dimen/_15px</item>
+    </style>
+    <style name="groupStylebluegray_700">
+        <item name="android:background">@drawable/rectangle_bg_bluegray_700</item>
+    </style>
+    <style name="textStyleRobotoregular18">
+        <item name="android:textSize">@dimen/_18px</item>
+        <item name="android:textColor">@color/black_900</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:background">@drawable/rectangle_bg_white_a700_radius_25_5</item>
+    </style>
+    <style name="textStyleRobotoregular16" parent="textStyleRobotoregular16_2">
+        <item name="android:textColor">@color/white_A700</item>
+    </style>
+    <style name="textStyleRobotomedium18">
+        <item name="android:textSize">@dimen/_18px</item>
+        <item name="android:textColor">@color/white_A700</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textFontWeight">500</item>
+    </style>
+    <style name="textStyleRobotoregular14" parent="textStyleRobotoregular20">
+        <item name="android:textSize">@dimen/_14px</item>
+    </style>
+    <style name="textStyleRobotoregular12" parent="textStyleRobotoregular20">
+        <item name="android:textSize">@dimen/_12px</item>
+    </style>
+    <style name="textStyleRobotoregular11" parent="textStyleRobotoregular20">
+        <item name="android:textSize">@dimen/_11px</item>
+    </style>
+    <style name="groupStylewhite_A700_67cornerRadius">
+        <item name="android:background">@drawable/rectangle_bg_white_a700_67_radius_9</item>
+    </style>
+    <style name="groupStylewhite_A700">
+        <item name="android:background">@drawable/rectangle_bg_white_a700</item>
+    </style>
+    <style name="groupStyleblack_900_9fcornerRadius">
+        <item name="android:background">@drawable/rectangle_bg_black_900_9f_radius_9</item>
+    </style>
+    <style name="groupStylecornerRadius_2">
+        <item name="android:background">@drawable/rectangle_gradient_s_red_a700_e_deep_orange_400_radius_8</item>
+    </style>
+    <style name="groupStylecornerRadius_1">
+        <item name="android:background">@drawable/rectangle_gradient_s_lime_800_e_green_a400_radius_8</item>
+    </style>
+    <style name="textStyleregular16">
+        <item name="android:textSize">@dimen/_16px</item>
+        <item name="android:textColor">@color/bluegray_400</item>
+        <item name="android:textFontWeight">400</item>
+    </style>
+    <style name="groupStyleblack_900_a6">
+        <item name="android:background">@drawable/rectangle_bg_black_900_a6</item>
+    </style>
+    <style name="groupStyleblack_900">
+        <item name="android:background">@drawable/rectangle_bg_black_900</item>
+    </style>
+    <style name="groupStyleblack_900_82">
+        <item name="android:background">@drawable/rectangle_bg_black_900_82</item>
+    </style>
+    <style name="textStyleRobotomedium28" parent="textStyleRobotomedium18">
+        <item name="android:textSize">@dimen/_28px</item>
+    </style>
+    <style name="textStyleRobotobold26">
+        <item name="android:textSize">@dimen/_26px</item>
+        <item name="android:textColor">@color/white_A700</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textFontWeight">700</item>
+    </style>
+    <style name="groupStyle">
+        <item name="android:background">@drawable/rectangle_dhi_0</item>
+    </style>
+    <style name="textStyleRobotoregular14_1" parent="textStyleRobotoregular14">
+        <item name="android:textColor">@color/white_A700</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:background">@drawable/rectangle_bg_white_a700_71_radius_12_5</item>
+    </style>
+    <style name="textStyleRobotoregular20">
+        <item name="android:textSize">@dimen/_20px</item>
+        <item name="android:textColor">@color/white_A700</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textFontWeight">400</item>
+    </style>
+    <style name="textStyleRobotoregular16_1" parent="textStyleRobotoregular16">
+        <item name="android:textSize">@dimen/_16px</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:background">@drawable/rectangle_bg_white_a700_6b_radius_9</item>
+    </style>
+    <style name="textStyleRobotoregular16_2">
+        <item name="android:textSize">@dimen/_16px</item>
+        <item name="android:textColor">@color/teal_A400</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textFontWeight">400</item>
+    </style>
+    <style name="groupStylewhite_A700_75">
+        <item name="android:background">@drawable/rectangle_bg_white_a700_75</item>
+    </style>
+</resources>

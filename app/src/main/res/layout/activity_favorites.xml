@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="favoritesVM" type="com.musicplayer.app.modules.favorites.data.viewmodel.FavoritesVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblack_900">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_49px"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linear1"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyle">
+                <ImageView android:id="@+id/image"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_18px"
+                    android:layout_width="@dimen/_10px" android:src="@drawable/img_icon15"/>
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtFavourites"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_50px"
+                    android:layout_weight="0.49"
+                    android:layout_width="0dp"
+                    android:text="@{favoritesVM.favoritesModel.txtFavourites}" style="@style/textStyleRobotoregular20"/>
+                <ImageView android:id="@+id/image1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="@dimen/_16px"
+                    android:layout_marginStart="@dimen/_50px"
+                    android:layout_width="@dimen/_19px" android:src="@drawable/img_icon16"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.core.widget.NestedScrollView
+            android:clipToPadding="false" android:fillViewport="true"
+            android:id="@+id/scrollView"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="match_parent" android:paddingBottom="@dimen/_10px">
+            <LinearLayout android:id="@+id/linear2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStyleblack_900">
+                <FrameLayout android:id="@+id/frame"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12px"
+                    android:layout_marginStart="@dimen/_12px"
+                    android:layout_marginTop="@dimen/_53px"
+                    android:layout_width="match_parent" style="@style/groupStyle">
+                    <FrameLayout android:id="@+id/frame1"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent" style="@style/groupStylecornerRadius">
+                        <LinearLayout android:id="@+id/linear3"
+                            android:layout_gravity="bottom|center"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/_24px"
+                            android:layout_marginEnd="@dimen/_18px"
+                            android:layout_marginStart="@dimen/_18px"
+                            android:layout_marginTop="@dimen/_97px"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStyle">
+                            <LinearLayout android:id="@+id/linear4"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent" android:orientation="horizontal">
+                                <LinearLayout android:id="@+id/linear5"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.51"
+                                    android:layout_width="0dp" android:orientation="vertical">
+                                    <FrameLayout
+                                    android:id="@+id/frame2"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent" style="@style/groupStyle">
+                                    <TextView
+                                    android:gravity="top|start"
+                                    android:id="@+id/txtDidYouLikeIt"
+                                    android:layout_gravity="center"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="@dimen/_4px"
+                                    android:layout_width="match_parent"
+                                    android:text="@{favoritesVM.favoritesModel.txtDidYouLikeIt}" style="@style/textStyleRobotomedium28"/>
+                                    </FrameLayout>
+                                    <FrameLayout
+                                    android:id="@+id/frame3"
+                                    android:layout_gravity="start"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_1px"
+                                    android:layout_width="match_parent" style="@style/groupStyle">
+                                    <TextView
+                                    android:gravity="top|start"
+                                    android:id="@+id/txt843Tracks"
+                                    android:layout_gravity="center"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="@dimen/_2px"
+                                    android:layout_width="match_parent"
+                                    android:text="@{favoritesVM.favoritesModel.txt843Tracks}" style="@style/textStyleRobotoregular16"/>
+                                    </FrameLayout>
+                                </LinearLayout>
+                                <ImageView android:id="@+id/image2"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="@dimen/_59px"
+                                    android:layout_marginStart="@dimen/_50px"
+                                    android:layout_width="@dimen/_59px" imageRes="@{@drawable/img_play2}"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frame4"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12px"
+                    android:layout_marginStart="@dimen/_12px"
+                    android:layout_marginTop="@dimen/_21px"
+                    android:layout_width="match_parent" style="@style/groupStyle">
+                    <FrameLayout android:id="@+id/frame5"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent" style="@style/groupStylewhite_A700_67cornerRadius">
+                        <LinearLayout android:id="@+id/linear6"
+                            android:layout_gravity="center|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_15px"
+                            android:layout_marginStart="@dimen/_18px"
+                            android:layout_marginTop="@dimen/_17px"
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal" style="@style/groupStyle">
+                            <ImageView android:id="@+id/image3"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="@dimen/_24px"
+                                android:layout_width="@dimen/_19px" android:src="@drawable/img_icon10_1"/>
+                            <TextView android:gravity="top|start"
+                                android:id="@+id/txtTracks"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_50px"
+                                android:layout_width="wrap_content"
+                                android:text="@{favoritesVM.favoritesModel.txtTracks}" style="@style/textStyleRobotoregular16"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                </FrameLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8px"
+                    android:layout_width="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_8px}" tools:itemCount="2" tools:listitem="@layout/row_favorites1"/>
+                <FrameLayout android:id="@+id/frame6"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12px"
+                    android:layout_marginStart="@dimen/_12px"
+                    android:layout_marginTop="@dimen/_8px"
+                    android:layout_width="match_parent" style="@style/groupStyle">
+                    <FrameLayout android:id="@+id/frame7"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent" style="@style/groupStylewhite_A700_67cornerRadius">
+                        <LinearLayout android:id="@+id/linear7"
+                            android:layout_gravity="center|start"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/_18px"
+                            android:layout_marginStart="@dimen/_18px"
+                            android:layout_marginTop="@dimen/_18px"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical" style="@style/groupStyle">
+                            <LinearLayout android:id="@+id/linear8"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent" android:orientation="horizontal">
+                                <ImageView android:id="@+id/image4"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="@dimen/_18px"
+                                    android:layout_width="@dimen/_25px" android:src="@drawable/img_icon7_1"/>
+                                <TextView android:gravity="top|start"
+                                    android:id="@+id/txtPlaylists"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_50px"
+                                    android:layout_weight="0.82"
+                                    android:layout_width="0dp"
+                                    android:text="@{favoritesVM.favoritesModel.txtPlaylists}" style="@style/textStyleRobotoregular16"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frame8"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12px"
+                    android:layout_marginStart="@dimen/_12px"
+                    android:layout_marginTop="@dimen/_8px"
+                    android:layout_width="match_parent" style="@style/groupStyle">
+                    <FrameLayout android:id="@+id/frame9"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent" style="@style/groupStylewhite_A700_67cornerRadius">
+                        <LinearLayout android:id="@+id/linear9"
+                            android:layout_gravity="center|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_17px"
+                            android:layout_marginStart="@dimen/_19px"
+                            android:layout_marginTop="@dimen/_16px"
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal" style="@style/groupStyle">
+                            <ImageView android:id="@+id/image5"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="@dimen/_23px"
+                                android:layout_width="@dimen/_23px" android:src="@drawable/img_icon8"/>
+                            <TextView android:gravity="top|start"
+                                android:id="@+id/txtDownload"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_50px"
+                                android:layout_width="wrap_content"
+                                android:text="@{favoritesVM.favoritesModel.txtDownload}" style="@style/textStyleRobotoregular16"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                </FrameLayout>
+                <FrameLayout android:id="@+id/frame10"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_38px"
+                    android:layout_width="match_parent" style="@style/groupStyle">
+                    <LinearLayout android:id="@+id/linear10"
+                        android:layout_gravity="center|start"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_8px"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStyleblack_900_a6">
+                        <LinearLayout android:id="@+id/linear11"
+                            android:layout_gravity="end"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <ImageView android:id="@+id/image6"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="@dimen/_10px"
+                                android:layout_width="@dimen/_18px" android:src="@drawable/img_icon13"/>
+                            <LinearLayout android:id="@+id/linear12"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_50px"
+                                android:layout_weight="0.57"
+                                android:layout_width="0dp"
+                                android:orientation="vertical" style="@style/groupStyle">
+                                <FrameLayout android:id="@+id/frame11"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent" style="@style/groupStyle">
+                                    <TextView
+                                    android:gravity="top|start"
+                                    android:id="@+id/txtUrgentSiege"
+                                    android:layout_gravity="center"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="@dimen/_2px"
+                                    android:layout_width="match_parent"
+                                    android:text="@{favoritesVM.favoritesModel.txtUrgentSiege}" style="@style/textStyleRobotomedium15"/>
+                                </FrameLayout>
+                                <FrameLayout android:id="@+id/frame12"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/_2px"
+                                    android:layout_marginStart="@dimen/_2px"
+                                    android:layout_width="match_parent" style="@style/groupStyle">
+                                    <TextView
+                                    android:gravity="top|start"
+                                    android:id="@+id/txtDamnedAnthem"
+                                    android:layout_gravity="center"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginBottom="@dimen/_2px"
+                                    android:layout_width="match_parent"
+                                    android:text="@{favoritesVM.favoritesModel.txtDamnedAnthem}" style="@style/textStyleRobotoregular11"/>
+                                </FrameLayout>
+                            </LinearLayout>
+                            <ImageView android:id="@+id/image7"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="@dimen/_17px"
+                                android:layout_marginStart="@dimen/_50px"
+                                android:layout_width="@dimen/_16px" android:src="@drawable/img_icon14"/>
+                        </LinearLayout>
+                        <View android:background="@color/white_A700"
+                            android:id="@+id/line"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_3px"
+                            android:layout_marginTop="@dimen/_5px" android:layout_width="match_parent"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

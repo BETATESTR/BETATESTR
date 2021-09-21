@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="loginVM" type="com.musicplayer.app.modules.login.data.viewmodel.LoginVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylebluegray_700">
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtSignIn"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_50px"
+            android:layout_marginStart="@dimen/_50px"
+            android:layout_marginTop="@dimen/_100px"
+            android:layout_width="match_parent"
+            android:text="@{loginVM.loginModel.txtSignIn}" style="@style/textStyleRobotomedium28"/>
+        <EditText
+            android:background="@drawable/rectangle_bg_black_900_a6_radius_9"
+            android:fontFamily="@font/roboto"
+            android:gravity="center|start"
+            android:hint="@string/lbl_email" android:id="@+id/etEmail"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30px"
+            android:layout_marginStart="@dimen/_30px"
+            android:layout_marginTop="@dimen/_31px"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_19px"
+            android:paddingStart="@dimen/_30px"
+            android:paddingTop="@dimen/_19px" android:singleLine="true"
+            android:text="@={loginVM.loginModel.etEmailValue}"
+            android:textColor="@color/white_A700"
+            android:textColorHint="@color/white_A700"
+            android:textFontWeight="400" android:textSize="@dimen/_16px" android:textStyle="normal"/>
+        <EditText
+            android:background="@drawable/rectangle_bg_black_900_a6_radius_9"
+            android:fontFamily="@font/roboto"
+            android:gravity="center|start"
+            android:hint="@string/lbl_password"
+            android:id="@+id/etPassword"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30px"
+            android:layout_marginStart="@dimen/_30px"
+            android:layout_marginTop="@dimen/_23px"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_20px"
+            android:paddingStart="@dimen/_30px"
+            android:paddingTop="@dimen/_18px" android:singleLine="true"
+            android:text="@={loginVM.loginModel.etPasswordValue}"
+            android:textColor="@color/white_A700"
+            android:textColorHint="@color/white_A700"
+            android:textFontWeight="400" android:textSize="@dimen/_16px" android:textStyle="normal"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:gravity="center" android:id="@+id/btnSignIn"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30px"
+            android:layout_marginStart="@dimen/_30px"
+            android:layout_marginTop="@dimen/_23px"
+            android:layout_width="match_parent"
+            android:text="@string/lbl_sign_in"
+            android:textAllCaps="false" style="@style/textStyleRobotoregular18"/>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtForgotYourLog"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_50px"
+            android:layout_marginStart="@dimen/_50px"
+            android:layout_marginTop="@dimen/_35px"
+            android:layout_width="match_parent"
+            android:text="@{loginVM.loginModel.txtForgotYourLog}" style="@style/textStyleRobotoregular14"/>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtCreateAccount"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_50px"
+            android:layout_marginStart="@dimen/_50px"
+            android:layout_marginTop="@dimen/_100px"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_6px"
+            android:paddingStart="@dimen/_9px"
+            android:paddingTop="@dimen/_3px"
+            android:text="@{loginVM.loginModel.txtCreateAccount}" style="@style/textStyleRobotoregular14_1"/>
+    </LinearLayout>
+</layout>
